@@ -11,16 +11,16 @@
                     <div class="d-inline">
                         <div class="show_item">
                             view:
-                            <i class="bi bi-grid-fill"></i>
-                            <i class="bi bi-justify"></i>
+                            <i class="bi bi-grid-fill" (click)="displayView(0)"></i>
+                            <i class="bi bi-justify" (click)="displayView(1)"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    <section>
+   
+    <section *ngIf="showSectionGrid === 0">
         <div class="row mt-3"> 
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 mb-4">
                     <div class="card">
@@ -177,12 +177,66 @@
                             <div class="model_name">Redmi</div>
                             <div class="brand_name">Note 12 Pro 5G (6/128GB)</div>
                             <div class="float-end">
-                                <div class="price"><span>$9,999.00</span> $5,499.00 
-                                </div>
+                                <div class="price"><span>$9,999.00</span> $5,499.00 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+        </div>
+    </section>
+
+    <section *ngIf="showSectionGrid === 1">
+        <div class="row mt-3"> 
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-4">
+                <div class="card">
+                    <div class="row mt-3">
+                     <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                        <div class="row">
+                            <img src="../../../assets/redmi-note-12-pro-5g-black-1_1_1.jpg" class="card-img-top" alt="...">
+                        </div>
+                     </div>
+                     <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+                        <div class="row mt-3 mb-0">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-0">    
+                                <div class="model_name">Redmi</div>
+                                <div class="brand_name">Note 12 Pro 5G (6/128GB)</div> 
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-0">
+                                <div class="d-inline">
+                                    <div class="float-end">
+                                        <div class="price"><span>$9,999.00</span> $5,499.00 </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>     
+                     </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-4">
+                <div class="card">
+                    <div class="row mt-3">
+                     <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+                        <img src="../../../assets/redmi-note-12-pro-5g-black-1_1_1.jpg" class="card-img-top" alt="...">
+                     </div>
+                     <div class="col-9 col-sm-9 col-md-8 col-lg-9 col-xl-9">
+                        <div class="row mt-3 mb-0">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-0">    
+                                <div class="model_name">Redmi</div>
+                                <div class="brand_name">Note 12 Pro 5G (6/128GB)</div> 
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-0">
+                                <div class="d-inline">
+                                    <div class="float-end">
+                                        <div class="price"><span>$9,999.00</span> $5,499.00 </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>     
+                     </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </div>
